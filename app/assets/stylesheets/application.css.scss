@@ -18,7 +18,7 @@
 @import 'bootstrap';
 
 
-
+/* Background Gradient */
 .home-callout, .navbarr {
   
   /* Credit to: https://twitter.com/_ighosh at UIgradients.com for background gradient*/
@@ -29,37 +29,31 @@
   ;
 }
 
+/* Home Page Header */
 .home-callout {
   padding-top:50px;
   padding-bottom:100px;
   color: white
 }
 
+
+/* Site-wide Top Navbar */
 .navbar {
   border:none;
 }
 
- .navbar-default  .navbar-brand {
+/* Using Sass - nested hover state css. Not available with just CSS */
+ .navbar-default  .navbar-brand, 
+ .navbar-default .navbar-nav > li > a {
   color: white;
-}
-
-.navbar-default  .navbar-brand:hover {
-  color:white;
-  opacity: 0.75;
-}
-
-.navbar-default .navbar-nav > li > a {
-  color:white;
-}
-
-.navbar-default .navbar-nav > li > a:hover {
-  color: white;
-  opacity: .75;
+  &:hover {
+    color: white;
+    opacity: .75;
+  }
 }
 
 
-
-
+/* Typography Styles */
 h1, h2, h3 {
     font-family: "Open Sans" , sans-serif;
 }

@@ -52,6 +52,20 @@
   font-weight: 800;
 }
 
+/*Hamburger Menu Style*/
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+  border: 2px solid white;
+  &:hover, &:focus {
+    background-color: #2F80ED;
+  }
+}
+
+
 /* Using Sass - nested hover state css. Not available with just CSS */
  .navbar-default  .navbar-brand, 
  .navbar-default .navbar-nav > li > a {
